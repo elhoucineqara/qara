@@ -1,0 +1,142 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "skills": "Compétences",
+    "services": "Services",
+    "events": "Événements",
+    "contact": "Contact"
+  },
+  "hero": {
+    "name": "El Houcine Qara",
+    "title": "Développeur Full Stack",
+    "subtitle": "Création d'applications web et mobiles modernes",
+    "contact": "Me contacter",
+    "at": "chez"
+  },
+  "about": {
+    "title": "À propos de moi",
+    "subtitle": "Développeur Full Stack chez",
+    "company": "HARX TECHNOLOGIES Inc",
+    "email": "elhoucineqara114@gmail.com",
+    "phone": "+212637446431",
+    "whatsapp": "WhatsApp",
+    "linkedin": "LinkedIn",
+    "location": "RABAT, MAROC",
+    "downloadCV": "Télécharger CV",
+    "viewCV": "Voir CV",
+    "description": "Passionné par le développement web et mobile, je crée des solutions innovantes et performantes pour répondre aux besoins de mes clients.",
+    "learnMore": "En savoir plus"
+  },
+  "skills": {
+    "title": "Mes Compétences",
+    "description": "Expertise en développement web et mobile",
+    "viewSkills": "Voir les compétences"
+  },
+  "services": {
+    "title": "Mes Services",
+    "subtitle": "Découvrez mes services professionnels en développement et conseil informatique",
+    "description": "Je propose des services complets de développement web et mobile pour vous aider à atteindre vos objectifs numériques.",
+    "viewServices": "Voir les Services"
+  },
+  "contact": {
+    "title": "Contactez-moi",
+    "subtitle": "N'hésitez pas à me contacter pour toute question ou opportunité de collaboration",
+    "description": "Je suis toujours ouvert à discuter de nouveaux projets, d'idées créatives ou d'opportunités pour faire partie de vos visions. N'hésitez pas à me contacter via le formulaire ci-dessous.",
+    "form": {
+      "firstName": "Prénom",
+      "lastName": "Nom",
+      "email": "Email",
+      "phone": "Téléphone",
+      "message": "Message",
+      "sendMessage": "Envoyer le message"
+    },
+    "modal": {
+      "title": "Formulaire de contact",
+      "name": "Nom complet",
+      "subject": "Sujet"
+    }
+  },
+  "footer": {
+    "copyright": "© 2024 El Houcine Qara. Tous droits réservés.",
+    "social": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+  "pages": {
+    "about": {
+      "title": "À propos de moi",
+      "description": "En savoir plus sur mon parcours et mon expertise en développement web"
+    },
+    "skills": {
+      "title": "Mes Compétences",
+      "description": "Découvrez mes compétences techniques et mon expertise dans différents domaines du développement",
+      "frontend": { "title": "Frontend" },
+      "backend": { "title": "Backend" },
+      "languages": { "title": "Langages" },
+      "databases": { "title": "Bases de données" },
+      "tools": { "title": "Outils" },
+      "apis": { "title": "APIs" },
+      "cloud": { "title": "Cloud" },
+      "mobile": { "title": "Mobile" },
+      "testing": { "title": "Testing" }
+    },
+    "services": {
+      "title": "Mes Services",
+      "description": "Découvrez mes services professionnels en développement et conseil informatique",
+      "webDev": {
+        "title": "Développement Web",
+        "description": "Création de sites web et d'applications web sur mesure, responsive et modernes. Expertise en frameworks modernes (React, Vue, Svelte), développement full-stack, et intégration d'APIs. Focus sur la performance, l'accessibilité et l'expérience utilisateur.",
+        "cta": "En savoir plus"
+      },
+      "mobileDev": {
+        "title": "Développement Mobile",
+        "description": "Développement d'applications mobiles natives et cross-platform pour iOS et Android. Utilisation de technologies comme React Native et Flutter. Création d'interfaces utilisateur intuitives, intégration de fonctionnalités avancées et optimisation des performances.",
+        "cta": "En savoir plus"
+      },
+      "cloud": {
+        "title": "Solutions Cloud",
+        "description": "Expertise complète en solutions cloud et pratiques DevOps. Déploiement sur AWS, Azure ou GCP, mise en place de pipelines CI/CD, conteneurisation avec Docker, orchestration Kubernetes, et automatisation des processus de développement et déploiement.",
+        "cta": "En savoir plus"
+      },
+      "devops": {
+        "title": "DevOps & Infrastructure",
+        "description": "Expertise en mise en place et gestion des pipelines de développement et de déploiement. Implémentation des pratiques CI/CD, orchestration de conteneurs, infrastructure as code, et solutions de tests automatisés.",
+        "cta": "En savoir plus"
+      },
+      "ai": {
+        "title": "IA & Machine Learning",
+        "description": "Développement de solutions basées sur l'IA et modèles d'apprentissage automatique. Implémentation d'analyses prédictives, traitement du langage naturel, vision par ordinateur et systèmes de prise de décision automatisés.",
+        "cta": "En savoir plus"
+      },
+      "consulting": {
+        "title": "Conseil & Stratégie",
+        "description": "Accompagnement stratégique complet pour vos projets digitaux. Analyse des besoins, définition de la roadmap technologique, optimisation des processus, conseil en architecture logicielle et accompagnement dans votre transformation numérique.",
+        "cta": "En savoir plus"
+      }
+    },
+    "contact": {
+      "title": "Contactez-moi",
+      "description": "N'hésitez pas à me contacter pour toute question ou opportunité de collaboration"
+    },
+    "events": {
+      "title": "Événements",
+      "description": "Découvrez et planifiez les prochains événements, workshops et conférences",
+      "upcomingEvents": "Événements à venir",
+      "addEvent": {
+        "title": "Ajouter un événement",
+        "eventTitle": "Titre",
+        "description": "Description",
+        "type": "Type",
+        "date": "Date",
+        "cancel": "Annuler",
+        "add": "Ajouter"
+      },
+      "types": {
+        "workshop": "Workshop",
+        "conference": "Presentation"
+      }
+    }
+  }
+} 

@@ -1,0 +1,139 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre Mí",
+    "skills": "Habilidades",
+    "projects": "Proyectos",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "name": "El Houcine Qara",
+    "title": "Desarrollador Full-Stack",
+    "subtitle": "Apasionado por el desarrollo web y móvil",
+    "contact": "Contáctame"
+  },
+  "about": {
+    "title": "Sobre Mí",
+    "description": "Un desarrollador full-stack apasionado con una sólida formación en desarrollo web y móvil. Combino creatividad y experiencia técnica para crear soluciones innovadoras.",
+    "learnMore": "Saber más",
+    "pageTitle": "Sobre Mí",
+    "pageDescription": "Soy El Houcine Qara, un desarrollador full-stack apasionado por crear aplicaciones web y móviles innovadoras. Actualmente desarrollador en HARX TECHNOLOGIES INC, combino mis habilidades técnicas con un enfoque creativo para resolver problemas complejos y crear soluciones efectivas.",
+    "education": {
+      "title": "Educación",
+      "degree1": {
+        "title": "Licenciatura Profesional en Ingeniería de Sistemas Informáticos y Tecnologías Web",
+        "school": "EST Sidi Bennour Chouaib Doukkali, El Jadida",
+        "period": "2023-2024"
+      },
+      "degree2": {
+        "title": "Diploma de Técnico Especializado en Desarrollo Digital",
+        "school": "ISTA Taourirt",
+        "period": "2021-2023"
+      },
+      "degree3": {
+        "title": "Licenciatura en Ciencias de la Materia Física, Opción Electrónica",
+        "school": "Facultad de Ciencias Aïn Chock Hassan II, Casablanca",
+        "period": "2016-2020"
+      }
+    },
+    "experience": {
+      "title": "Experiencia Profesional",
+      "job1": {
+        "title": "Desarrollador Full-Stack",
+        "company": "HARX TECHNOLOGIES INC",
+        "period": "2023 - Presente",
+        "responsibilities": [
+          "Desarrollo de aplicaciones web y móviles",
+          "Diseño e implementación de arquitecturas de software",
+          "Colaboración con un equipo multidisciplinario",
+          "Optimización del rendimiento y la experiencia de usuario"
+        ]
+      }
+    },
+    "goals": {
+      "title": "Objetivos Profesionales"
+    }
+  },
+  "skills": {
+    "title": "Mis Habilidades",
+    "description": "Experiencia en desarrollo front-end y back-end, con dominio de tecnologías modernas.",
+    "viewSkills": "Ver habilidades",
+    "pageTitle": "Mis Habilidades",
+    "pageDescription": "Una visión general completa de las habilidades técnicas y tecnologías dominadas.",
+    "frontend": {
+      "title": "Desarrollo Front-End"
+    },
+    "backend": {
+      "title": "Desarrollo Back-End"
+    },
+    "languages": {
+      "title": "Lenguajes de Programación"
+    }
+  },
+  "projects": {
+    "title": "Mis Proyectos",
+    "description": "Descubre logros y proyectos que demuestran habilidades y pasión por el desarrollo.",
+    "viewProjects": "Ver proyectos",
+    "pageTitle": "Mis Proyectos",
+    "pageDescription": "Aquí hay algunos de los proyectos completados que demuestran habilidades y experiencia en desarrollo web.",
+    "project1": {
+      "title": "Plataforma de Comercio Electrónico",
+      "description": "Una moderna plataforma de comercio electrónico construida con React y Node.js, con gestión de productos, carrito de compras e integración de pagos seguros.",
+      "viewCode": "Ver Código",
+      "demo": "Demo en Vivo"
+    },
+    "project2": {
+      "title": "Sistema de Gestión de Tareas",
+      "description": "Un sistema integral de gestión de tareas desarrollado con Laravel y Vue.js, que incluye actualizaciones en tiempo real y funciones de colaboración en equipo.",
+      "viewCode": "Ver Código",
+      "demo": "Demo en Vivo"
+    },
+    "project3": {
+      "title": "Aplicación Móvil de Fitness",
+      "description": "Una aplicación de fitness multiplataforma construida con Ionic y Angular, con seguimiento de entrenamientos, monitoreo de progreso y compartición social.",
+      "viewCode": "Ver Código",
+      "demo": "Demo en Vivo"
+    }
+  },
+  "services": {
+    "title": "Mis Servicios",
+    "description": "Ofrezco una amplia gama de servicios de desarrollo web y móvil para ayudar a hacer realidad tu visión digital.",
+    "viewServices": "Ver servicios",
+    "pageTitle": "Mis Servicios",
+    "pageDescription": "Descubre los servicios profesionales que ofrezco en desarrollo web y móvil.",
+    "service1": {
+      "title": "Desarrollo Web Full-Stack",
+      "description": "Desarrollo de aplicaciones web completas y escalables utilizando las últimas tecnologías y mejores prácticas."
+    },
+    "service2": {
+      "title": "Desarrollo de Aplicaciones Móviles",
+      "description": "Creación de aplicaciones móviles nativas y multiplataforma que ofrecen una experiencia de usuario excepcional."
+    },
+    "service3": {
+      "title": "Consultoría Técnica",
+      "description": "Asesoramiento experto en arquitectura de software, optimización de rendimiento y mejores prácticas de desarrollo."
+    },
+    "service4": {
+      "title": "Mantenimiento y Soporte",
+      "description": "Servicios continuos de mantenimiento, actualizaciones y soporte técnico para garantizar el funcionamiento óptimo de sus aplicaciones."
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "subtitle": "No dudes en usar el formulario o enviarnos un correo electrónico.",
+    "form": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo electrónico",
+      "phone": "Teléfono (opcional)",
+      "message": "Mensaje",
+      "sendMessage": "Enviar mensaje"
+    },
+    "modal": {
+      "title": "Envíame un mensaje",
+      "name": "Nombre",
+      "subject": "Asunto"
+    }
+  }
+} 
