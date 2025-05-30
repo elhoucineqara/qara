@@ -1,32 +1,36 @@
-# Étape 1 : Build de l'application
-FROM node:18 AS builder
+# Build stage
+FROM node:20-alpine as builder
 
-# Dossier de travail
 WORKDIR /app
 
-# Copier les fichiers
+# Copy package files
+COPY package*.json ./
+COPY .npmrc ./
+
+# Install dependencies
+RUN npm ci
+
+# Copy source code
 COPY . .
 
-# Installer les dépendances
-RUN npm install
-
-# Builder le projet (avec SvelteKit + adapter-static)
+# Build the application
 RUN npm run build
 
-# Étape 2 : Serveur nginx pour servir le site statique
-FROM nginx:alpine
+# Production stage
+FROM node:20-alpine
 
-# Supprimer le contenu par défaut de nginx
-RUN rm -rf /usr/share/nginx/html/*
+WORKDIR /app
 
-# Copier les fichiers du build vers nginx
-COPY --from=builder /app/build /usr/share/nginx/html
+# Copy built assets from builder
+COPY --from=builder /app/build ./build
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/.npmrc ./
 
-# Copier la config nginx personnalisée (optionnel)
-# COPY nginx.conf /etc/nginx/conf.d/default.conf
+# Install only production dependencies
+RUN npm ci --production
 
-# Exposer le port HTTP
+# Expose the port the app runs on
 EXPOSE 80
 
-# Démarrer nginx
-CMD ["nginx", "-g", "daemon off;"]
+# Start the application
+CMD ["node", "build"]
