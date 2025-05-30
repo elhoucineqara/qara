@@ -290,9 +290,13 @@
 </div>
 
 {#if showModal}
-  <div 
+  <div
     class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-2 sm:p-4 overflow-y-auto"
     on:click|self={toggleModal}
+    on:keydown={e => e.key === 'Escape' && toggleModal()}
+    role="dialog"
+    aria-modal="true"
+    tabindex="0"
   >
     <div class="relative w-full max-w-4xl bg-white rounded-xl shadow-2xl min-h-[80vh] my-4">
       <div class="flex justify-end">
@@ -316,22 +320,19 @@
 {/if}
 
 <style>
-  .font-playfair {
-    font-family: 'Playfair Display', serif;
-  }
-  
-  .font-poppins {
-    font-family: 'Poppins', sans-serif;
-  }
-
-  [dir="rtl"] .ml-auto {
-    margin-left: 0;
-    margin-right: auto;
-  }
-
-  [dir="rtl"] .mr-auto {
-    margin-right: 0;
-    margin-left: auto;
+  /* Remove unused selectors */
+  .font-playfair,
+  .font-poppins,
+  [dir="rtl"] .ml-auto,
+  [dir="rtl"] .mr-auto,
+  .clip-path-triangle,
+  .particle,
+  .glitch-effect,
+  .scanline,
+  .code-line,
+  .crt-overlay,
+  .distortion {
+    display: none;
   }
 
   .typewriter {
@@ -342,10 +343,6 @@
   @keyframes blink {
     from, to { border-color: transparent }
     50% { border-color: #00ffff; }
-  }
-
-  .clip-path-triangle {
-    display: none;
   }
 
   @keyframes float {
@@ -423,30 +420,6 @@
   .animate-wave-delayed {
     animation: wave 8s ease-in-out infinite;
     animation-delay: 2s;
-  }
-
-  /* Add particle effect */
-  .particle {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: rgba(0, 255, 0, 0.3);
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-    animation: particle-float 6s ease-in-out infinite;
-  }
-
-  @keyframes particle-float {
-    0%, 100% { 
-      transform: translateY(0) translateX(0); 
-      opacity: 0.5;
-      box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-    }
-    50% { 
-      transform: translateY(-20px) translateX(10px); 
-      opacity: 0.8;
-      box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
-    }
   }
 
   /* Update text colors for tech theme */

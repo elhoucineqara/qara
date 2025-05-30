@@ -137,52 +137,52 @@
       <form class="space-y-8 p-10 bg-slate-900/50 backdrop-blur-sm rounded-3xl shadow-2xl border border-cyan-500/20" on:submit|preventDefault={handleSubmit}>      
         <div class="grid md:grid-cols-2 gap-8">
           <div class="relative">
-            <label class="block text-sm font-semibold text-cyan-400 mb-2">{$t('contact.form.firstName')}</label>
-            <input 
-              type="text" 
-              placeholder={$t('contact.form.firstName')} 
+            <label for="firstName" class="block text-sm font-semibold text-cyan-400 mb-2">{$t('contact.form.firstName')}</label>
+            <input
+              id="firstName"
+              type="text"
               bind:value={formData.firstName}
-              class="w-full px-5 py-4 border-2 border-cyan-500/20 rounded-2xl focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300 hover:border-cyan-500/40 bg-slate-800/50 text-gray-200 placeholder-gray-400"
-            >
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
+            />
           </div>
           <div class="relative">
-            <label class="block text-sm font-semibold text-cyan-400 mb-2">{$t('contact.form.lastName')}</label>
-            <input 
-              type="text" 
-              placeholder={$t('contact.form.lastName')} 
+            <label for="lastName" class="block text-sm font-semibold text-cyan-400 mb-2">{$t('contact.form.lastName')}</label>
+            <input
+              id="lastName"
+              type="text"
               bind:value={formData.lastName}
-              class="w-full px-5 py-4 border-2 border-cyan-500/20 rounded-2xl focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300 hover:border-cyan-500/40 bg-slate-800/50 text-gray-200 placeholder-gray-400"
-            >
+              class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
+            />
           </div>
         </div>
 
         <div class="relative">
-          <label class="block text-sm font-semibold text-cyan-400 mb-2">{$t('contact.form.email')}</label>
-          <input 
-            type="email" 
-            placeholder="example@email.com" 
+          <label for="email" class="block text-sm font-semibold text-cyan-400 mb-2">{$t('contact.form.email')}</label>
+          <input
+            id="email"
+            type="email"
             bind:value={formData.email}
-            class="w-full px-5 py-4 border-2 border-cyan-500/20 rounded-2xl focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300 hover:border-cyan-500/40 bg-slate-800/50 text-gray-200 placeholder-gray-400"
-          >
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
+          />
         </div>
 
         <div class="relative">
-          <label class="block text-sm font-semibold text-cyan-400 mb-2">{$t('contact.form.phone')}</label>
-          <input 
-            type="tel" 
-            placeholder="xxx-xxx-xxxx" 
+          <label for="phone" class="block text-sm font-semibold text-cyan-400 mb-2">{$t('contact.form.phone')}</label>
+          <input
+            id="phone"
+            type="tel"
             bind:value={formData.phone}
-            class="w-full px-5 py-4 border-2 border-cyan-500/20 rounded-2xl focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300 hover:border-cyan-500/40 bg-slate-800/50 text-gray-200 placeholder-gray-400"
-          >
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
+          />
         </div>
 
         <div class="relative">
-          <label class="block text-sm font-semibold text-cyan-400 mb-2">{$t('contact.form.message')}</label>
-          <textarea 
-            rows="5" 
-            placeholder={$t('contact.form.message')} 
+          <label for="message" class="block text-sm font-semibold text-cyan-400 mb-2">{$t('contact.form.message')}</label>
+          <textarea
+            id="message"
+            rows="5"
             bind:value={formData.message}
-            class="w-full px-5 py-4 border-2 border-cyan-500/20 rounded-2xl focus:border-cyan-500 focus:ring-2 focus:ring-cyan-500/20 transition-all duration-300 hover:border-cyan-500/40 bg-slate-800/50 text-gray-200 placeholder-gray-400 resize-none"
+            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-cyan-400 focus:border-transparent"
           ></textarea>
         </div>
 
@@ -288,172 +288,15 @@
 {/if}
 
 <style>
-  /* Add particle effect */
-  .particle {
-    position: absolute;
-    width: 4px;
-    height: 4px;
-    background: rgba(0, 255, 0, 0.3);
-    border-radius: 50%;
-    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-    animation: particle-float 6s ease-in-out infinite;
-  }
-
-  @keyframes particle-float {
-    0%, 100% { 
-      transform: translateY(0) translateX(0); 
-      opacity: 0.5;
-      box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
-    }
-    50% { 
-      transform: translateY(-20px) translateX(10px); 
-      opacity: 0.8;
-      box-shadow: 0 0 20px rgba(0, 255, 0, 0.8);
-    }
-  }
-
-  /* Add scanline effect */
-  .scanline {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      to bottom,
-      transparent 50%,
-      rgba(0, 255, 0, 0.05) 50%
-    );
-    background-size: 100% 4px;
-    pointer-events: none;
-    animation: scanline 8s linear infinite;
-  }
-
-  @keyframes scanline {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(100%); }
-  }
-
-  /* Matrix rain canvas */
-  #matrix-rain {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-  }
-
-  /* Add CRT screen effect */
-  .crt-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.15),
-      rgba(0, 0, 0, 0.15) 1px,
-      transparent 1px,
-      transparent 2px
-    );
-    pointer-events: none;
-    animation: flicker 0.15s infinite;
-  }
-
-  @keyframes flicker {
-    0% { opacity: 0.97; }
-    5% { opacity: 0.95; }
-    10% { opacity: 0.9; }
-    15% { opacity: 0.95; }
-    20% { opacity: 0.98; }
-    25% { opacity: 0.95; }
-    30% { opacity: 0.9; }
-    35% { opacity: 0.95; }
-    40% { opacity: 0.98; }
-    45% { opacity: 0.95; }
-    50% { opacity: 0.9; }
-    55% { opacity: 0.95; }
-    60% { opacity: 0.98; }
-    65% { opacity: 0.95; }
-    70% { opacity: 0.9; }
-    75% { opacity: 0.95; }
-    80% { opacity: 0.98; }
-    85% { opacity: 0.95; }
-    90% { opacity: 0.9; }
-    95% { opacity: 0.95; }
-    100% { opacity: 0.98; }
-  }
-
-  /* Add distortion effect */
-  .distortion {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: repeating-linear-gradient(
-      0deg,
-      rgba(0, 255, 255, 0.1) 0px,
-      rgba(0, 255, 255, 0.1) 1px,
-      transparent 1px,
-      transparent 2px
-    );
-    pointer-events: none;
-    animation: distort 0.5s infinite;
-  }
-
-  @keyframes distort {
-    0% { transform: skewX(0deg); }
-    25% { transform: skewX(1deg); }
-    75% { transform: skewX(-1deg); }
-    100% { transform: skewX(0deg); }
-  }
-
-  /* Update text colors for tech theme */
-  h1 {
-    color: #00ffff;
-    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
-  }
-
-  /* Add glitch effect */
-  @keyframes glitch {
-    0% { transform: translate(0); }
-    20% { transform: translate(-2px, 2px); }
-    40% { transform: translate(-2px, -2px); }
-    60% { transform: translate(2px, 2px); }
-    80% { transform: translate(2px, -2px); }
-    100% { transform: translate(0); }
-  }
-
-  .glitch-effect {
-    animation: glitch 1s linear infinite;
-  }
-
-  /* Update button styles */
-  a, button {
-    position: relative;
-    overflow: hidden;
-  }
-
-  a::before, button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(
-      90deg,
-      transparent,
-      rgba(0, 255, 255, 0.2),
-      transparent
-    );
-    transition: 0.5s;
-  }
-
-  a:hover::before, button:hover::before {
-    left: 100%;
+  /* Remove unused selectors */
+  .particle,
+  .scanline,
+  .crt-overlay,
+  .distortion,
+  .glitch-effect,
+  a,
+  a::before,
+  a:hover::before {
+    display: none;
   }
 </style> 

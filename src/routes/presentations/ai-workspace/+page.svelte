@@ -785,15 +785,15 @@
                           <p class="contact-value">elhoucineqara114@gmail.com</p>
                         </div>
                         <div class="social-links">
-                          <a href="#" class="social-link">
+                          <button type="button" class="social-link" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
-                          </a>
-                          <a href="#" class="social-link">
+                          </button>
+                          <button type="button" class="social-link" aria-label="GitHub">
                             <i class="fab fa-github"></i>
-                          </a>
-                          <a href="#" class="social-link">
+                          </button>
+                          <button type="button" class="social-link" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
-                          </a>
+                          </button>
                         </div>
                       </div>
                     </div>
