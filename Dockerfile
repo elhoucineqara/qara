@@ -32,5 +32,9 @@ RUN npm ci --production
 # Expose the port the app runs on
 EXPOSE 80
 
+# Set environment variables
+ENV PORT=80
+ENV HOST=0.0.0.0
+
 # Start the application
 CMD ["node", "build"]
