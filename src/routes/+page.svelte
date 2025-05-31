@@ -5,7 +5,6 @@
   
   let isVisible = false;
 
-  // Commentaire
   
   onMount(() => {
     isVisible = true;
