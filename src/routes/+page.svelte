@@ -4,6 +4,8 @@
   import Header from '$lib/components/Header.svelte';
   
   let isVisible = false;
+
+  // Commentaire
   
   onMount(() => {
     isVisible = true;
